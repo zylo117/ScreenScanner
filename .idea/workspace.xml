@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="53b5db98-784c-4fbc-9891-914a0cb01515" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optical_character_recognition/test_chs.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/optical_character_recognition/test_chs.tiff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_chs.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/test_chs.tiff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_cleaner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ScreenScanner$text_cleaner.coverage" NAME="text_cleaner Coverage Results" MODIFIED="1525914409615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ScreenScanner$text_cleaner.coverage" NAME="text_cleaner Coverage Results" MODIFIED="1525920338019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ScreenScanner$Twisted_Trial_in_test_tesseract_py.coverage" NAME="Twisted Trial in test_tesseract.py Coverage Results" MODIFIED="1525828117124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/optical_character_recognition" />
     <SUITE FILE_PATH="coverage/ScreenScanner$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1525853899491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/optical_character_recognition" />
   </component>
@@ -34,22 +36,34 @@
       <file leaf-file-name="text_cleaner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text_cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+            <state relative-caret-position="256">
+              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#454#671#0" />
+                <element signature="e#1260#1287#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pytesseract.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pytesseract/pytesseract.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/cv2/cv2/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="124" column="33" lean-forward="true" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+            <state relative-caret-position="127">
+              <caret line="10708" column="4" selection-start-line="10708" selection-start-column="4" selection-end-line="10708" selection-end-column="4" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_chs_rotate.tiff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_chs_rotate.tiff">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="test_chs.tiff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/optical_character_recognition/test_chs.tiff">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -99,11 +113,6 @@
             <path>
               <item name="ScreenScanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScreenScanner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ScreenScanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScreenScanner" type="462c0819:PsiDirectoryNode" />
-              <item name="optical_character_recognition" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,7 +250,7 @@
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.3287037" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.3287037" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="5" />
       <window_info anchor="bottom" id="Terminal" order="4" />
@@ -252,7 +261,7 @@
       <window_info anchor="bottom" id="Find" order="7" weight="0.3287037" />
       <window_info anchor="right" auto_hide="true" x="351" y="29" width="434" height="648" id="SciView" order="1" show_stripe_button="false" type="FLOATING" weight="0.32928678" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Debug" order="9" visible="true" weight="0.39969134" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39969134" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
@@ -288,16 +297,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/text_cleaner.py</url>
-          <line>43</line>
+          <line>78</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/text_cleaner.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="14" />
+          <line>48</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -333,9 +342,6 @@
     <entry file="file://$PROJECT_DIR$/optical_character_recognition/training/user.mes.exp1.tiff">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/optical_character_recognition/test_chs.tiff">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/core/fromnumeric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -352,27 +358,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/optical_character_recognition/test_tesseract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/numpy/random/mtrand.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="2171" column="71" selection-start-line="2171" selection-start-column="71" selection-end-line="2171" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4477" column="4" selection-start-line="4477" selection-start-column="4" selection-end-line="4477" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -383,12 +372,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_chs.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_chs_super_rotate.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_chs_super_rotate.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_chs_rotate.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optical_character_recognition/test_chs.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/cv2/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="10708" column="4" selection-start-line="10708" selection-start-column="4" selection-end-line="10708" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optical_character_recognition/test_tesseract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/text_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+        <state relative-caret-position="256">
+          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#454#671#0" />
+            <element signature="e#1260#1287#0" />
           </folding>
         </state>
       </provider>
