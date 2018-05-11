@@ -13,6 +13,12 @@ class TextImg:
         self.gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         self.character_roi_set = None
         self.character_loc_set = None
+        self.name_fmt = {
+            "lang": "user",
+            "font": "normal",
+            "postfix": "exp",
+            "img_fmt": "tiff"
+        }
 
     def whiten_background(self, thresh_val=None):
         if thresh_val is not None:
@@ -159,25 +165,26 @@ class TextImg:
             cv2.rectangle(demo_img, (x, y), (new_x, new_y), (255, 0, 255), 1)
             self.character_roi_set[i] = self.gray_img[y:new_y, x:new_x]
 
-        # save character_roi_set into storage(default into memory)
+            # save character_roi_set into storage(default into memory)
+            self._save_character_img(self.character_roi_set[i], index=str(i))
 
         return demo_img, self.character_roi_set, self.character_loc_set
 
-    def _save_character_img(self, path="memory", **kwargs):
-        kwargs = {
-            "lang": "user",
-            "font": "normal",
-            "prefix": "exp",
-            "img_fmt": "tiff"
-        }
-
+    def _save_character_img(self, img, path="memory", index="0", **name_fmt):
         count = len(self.character_roi_set)
+        if len(name_fmt) == 0:
+            name_fmt = self.name_fmt
+
+        filepath = "./ocr/character_roi_set/"
+        filename = "%s.%s.%s%s.%s" % (name_fmt["lang"], name_fmt["font"], name_fmt["postfix"], index, name_fmt["img_fmt"])
 
         # create character_roi_set path
         if path == "memory":
-            mem_fs.makedirs("./character_roi_set")
+            if not mem_fs.exists(filepath):
+                mem_fs.makedirs(filepath)
+            mem_fs.create(filepath + filename)
 
-
+            file_stream = mem_fs.getfile()
 
 
 if __name__ == "__main__":
