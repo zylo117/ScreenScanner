@@ -2,12 +2,17 @@ import cv2
 import imutils
 import numpy as np
 import pytesseract
+from fs.memoryfs import MemoryFS
 
+mem_fs = MemoryFS()
+print("[INFO] Initializing RAM Disk...")
 
 class TextImg:
     def __init__(self, img):
         self.img = img
         self.gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        self.character_roi_set = None
+        self.character_loc_set = None
 
     def whiten_background(self, thresh_val=None):
         if thresh_val is not None:
@@ -112,33 +117,67 @@ class TextImg:
 
         return self.gray_img
 
-    def text_boundary(self, kernel=None, iterations=8):
+    def text_boundary(self, thresh=None, kernel=None, iterations=8):
         # transform img into binary img
-        _, img = cv2.threshold(self.gray_img, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+        if thresh is None:
+            _, demo_img = cv2.threshold(self.gray_img, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+        else:
+            _, demo_img = cv2.threshold(self.gray_img, thresh, 255, cv2.THRESH_BINARY_INV)
 
         if kernel is None:
             # set kernel size into (1, 3), because line spacing is much bigger than character spacing
             kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 3))
-        # glue every parts of characters together and separate from one another
-        img = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel, iterations=iterations)
+        # glue every parts of characters together and separate from one another (vertically)
+        demo_img = cv2.dilate(demo_img, kernel, iterations=iterations)
+        # glue every parts of characters together and separate from one another for a little bit (horizontally)
+        demo_img = cv2.dilate(demo_img, None)
+        # revert to normal height
+        demo_img = cv2.erode(demo_img, kernel, iterations=iterations)
 
-        cnts = cv2.findContours(img.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)[-2]
-        img = cv2.cvtColor(self.gray_img, cv2.COLOR_GRAY2BGR)
-        rect_set = np.zeros((len(cnts), 4))  # create a set that filter the false detected rects
+        # cv2.imshow("Character recognition", demo_img)
+        # cv2.waitKey(0)
+
+        cnts = cv2.findContours(demo_img.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)[-2]
+        demo_img = cv2.cvtColor(self.gray_img, cv2.COLOR_GRAY2BGR)
+        self.character_loc_set = np.zeros((len(cnts), 4))  # create a set that filter the false detected rects
         for i in range(len(cnts)):
             x, y, w, h = cv2.boundingRect(cnts[i])
-            rect_set[i] = [x, y, w, h]
+            self.character_loc_set[i] = [x, y, w, h]
 
-        rect_mean = np.mean(rect_set, axis=0)
+        # filter those who have less width than the average
+        rect_mean = np.mean(self.character_loc_set, axis=0)
+        rect_map = self.character_loc_set[:, 2] > rect_mean[2]
+        self.character_loc_set = self.character_loc_set[rect_map]
+        cnts = np.array(cnts)[rect_map]
 
-        real_rect_set = []
-        for i in range(len(rect_set)):
+        self.character_roi_set = np.zeros(len(self.character_loc_set)).astype(np.ndarray)
+        for i in range(len(self.character_loc_set)):
             x, y, w, h = cv2.boundingRect(cnts[i])
-            if w > rect_mean[2] and h > rect_mean[3]:
-                cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 255), 1)
-                real_rect_set.append([x, y, w, h])
+            new_x = x + w
+            new_y = y + h
+            # draw rect on image
+            cv2.rectangle(demo_img, (x, y), (new_x, new_y), (255, 0, 255), 1)
+            self.character_roi_set[i] = self.gray_img[y:new_y, x:new_x]
 
-        return img, real_rect_set
+        # save character_roi_set into storage(default into memory)
+
+        return demo_img, self.character_roi_set, self.character_loc_set
+
+    def _save_character_img(self, path="memory", **kwargs):
+        kwargs = {
+            "lang": "user",
+            "font": "normal",
+            "prefix": "exp",
+            "img_fmt": "tiff"
+        }
+
+        count = len(self.character_roi_set)
+
+        # create character_roi_set path
+        if path == "memory":
+            mem_fs.makedirs("./character_roi_set")
+
+
 
 
 if __name__ == "__main__":
@@ -163,8 +202,8 @@ if __name__ == "__main__":
     img = text.whiten_background(200)
     cv2.imshow("whiten_background", img)
 
-    img, real_rect_set = text.text_boundary()
-    cv2.imshow("Character recognition", img)
+    demo_img, character_roi_set, character_loc_set = text.text_boundary(thresh=200)
+    cv2.imshow("Character recognition", demo_img)
     cv2.waitKey(0)
 
     # text.sharpen_text()
