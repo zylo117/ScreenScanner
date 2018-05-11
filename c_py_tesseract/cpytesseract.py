@@ -4,13 +4,13 @@ import os
 LIB_PATH = "./libtesseract.dylib"
 
 env_dist = os.environ  # environ is a dict that defined in os.py, environ = {}
+# https://www.polarxiong.com/archives/python-pytesser-tesseract.html
 
-TESSDATA_PREFIX = env_dist.get('TESSDATA_PREFIX')
+print(env_dist.get('TESSDATA_PREFIX'))
+for key in env_dist:
+    print(key + ' : ' + env_dist[key])
 
-if TESSDATA_PREFIX is None:
-    raise EnvironmentError("Please check your environment variable to confirm 'TESSDATA_PREFIX' is correctly configured.")
-
-TESSDATA_PREFIX = b'TESSDATA_PREFIX'
+TESSDATA_PREFIX = b'./tessdata'
 lang = b'chi_sim'
 
 tesseract = ctypes.cdll.LoadLibrary(LIB_PATH)
