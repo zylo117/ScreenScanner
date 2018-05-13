@@ -2,8 +2,8 @@ import ctypes
 import os
 import platform
 
-LIB_NAME_OSX = "libtesseract.dylib"  # MAC OSX
-LIB_NAME_LINUX = "libtesseract.so"  # Linux
+LIB_NAME_OSX = "libtesseract.4.dylib"  # MAC OSX
+LIB_NAME_LINUX = "libtesseract.4.so"  # Linux
 LIB_NAME_WIN = "libtesseract-4.dll"  # Windows
 
 def get_os_type():
@@ -31,24 +31,24 @@ elif os_type == "other":
 
 env_dist = os.environ  # environ is a dict that defined in os.py, environ = {}
 
-TESSERACT_LIBRARY_DIR = env_dist.get('TESSDATA_PREFIX')
+TESSDATA_PREFIX = env_dist.get('TESSDATA_PREFIX')
 
 # print(env_dist.get('TESSDATA_PREFIX'))
 # for key in env_dist:
 #     print(key + ' : ' + env_dist[key])
 
-if TESSERACT_LIBRARY_DIR is None:
+if TESSDATA_PREFIX is None:
     raise EnvironmentError(
         "Please check your environment variable to confirm 'TESSDATA_PREFIX' is correctly configured"
         "or succeeded installed/compiled tesseract.")
 else:
-    TESSERACT_LIBRARY_DIR = TESSERACT_LIBRARY_DIR.replace("\\", "/") + "/"
+    TESSDATA_PREFIX = TESSDATA_PREFIX.replace("\\", "/") + "/"
 
-LIB_PATH = TESSERACT_LIBRARY_DIR + LIB_NAME
-TESSDATA_PREFIX = (TESSERACT_LIBRARY_DIR + "/tessdata").encode()
+# LIB_PATH = TESSDATA_PREFIX + LIB_NAME
+TESSDATA_PREFIX = TESSDATA_PREFIX.encode()
 lang = b'chi_sim'
 
-tesseract = ctypes.cdll.LoadLibrary(LIB_PATH)
+tesseract = ctypes.cdll.LoadLibrary(LIB_NAME)
 tesseract.TessBaseAPICreate.restype = ctypes.c_uint64
 api = tesseract.TessBaseAPICreate()
 rc = tesseract.TessBaseAPIInit3(ctypes.c_uint64(api), TESSDATA_PREFIX, lang)

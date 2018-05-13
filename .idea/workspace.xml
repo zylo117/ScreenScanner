@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53b5db98-784c-4fbc-9891-914a0cb01515" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/c_py_tesseract/capi3.0.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c_py_tesseract/capi4.0.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c_py_tesseract/cpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c_py_tesseract/cpt_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c_py_tesseract/test_eng.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ScreenScanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ScreenScanner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c_py_tesseract/cpytesseract.py" beforeDir="false" afterPath="$PROJECT_DIR$/c_py_tesseract/cpytesseract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c_py_tesseract/libtesseract.dylib" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,27 +24,20 @@
     <SUITE FILE_PATH="coverage/ScreenScanner$text_cleaner.coverage" NAME="text_cleaner Coverage Results" MODIFIED="1526027749741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ScreenScanner$ramdisk.coverage" NAME="ramdisk Coverage Results" MODIFIED="1526021983752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/ScreenScanner$Twisted_Trial_in_test_tesseract_py.coverage" NAME="Twisted Trial in test_tesseract.py Coverage Results" MODIFIED="1526026771693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/optical_character_recognition" />
+    <SUITE FILE_PATH="coverage/ScreenScanner$cpt.coverage" NAME="cpt Coverage Results" MODIFIED="1526188844417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c_py_tesseract" />
     <SUITE FILE_PATH="coverage/ScreenScanner$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1526026792430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/optical_character_recognition" />
-    <SUITE FILE_PATH="coverage/ScreenScanner$cpytesseract.coverage" NAME="cpytesseract Coverage Results" MODIFIED="1526029435194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c_py_tesseract" />
+    <SUITE FILE_PATH="coverage/ScreenScanner$cpytesseract.coverage" NAME="cpytesseract Coverage Results" MODIFIED="1526170851000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c_py_tesseract" />
     <SUITE FILE_PATH="coverage/ScreenScanner$test.coverage" NAME="test Coverage Results" MODIFIED="1526026782643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/ScreenScanner$cpt_4.coverage" NAME="cpt_4 Coverage Results" MODIFIED="1526182445829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c_py_tesseract" />
     <SUITE FILE_PATH="coverage/ScreenScanner$skeleton.coverage" NAME="skeleton Coverage Results" MODIFIED="1525931290402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="text_processor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text_processor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cpytesseract.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cpytesseract.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c_py_tesseract/cpytesseract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="257">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -43,47 +45,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/fs/base.py">
+      <file leaf-file-name="cpt.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/c_py_tesseract/cpt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8190">
-              <caret line="574" selection-start-line="574" selection-end-line="574" />
+            <state relative-caret-position="238">
+              <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="memoryfs.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/fs/memoryfs.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file:///opt/intel/intelpython3/lib/python3.6/ctypes/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5655">
-              <caret line="398" selection-start-line="398" selection-end-line="398" />
+            <state relative-caret-position="75">
+              <caret line="362" selection-start-line="362" selection-end-line="362" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pytesseract.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pytesseract/pytesseract.py">
+      <file leaf-file-name="test_eng.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c_py_tesseract/test_eng.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="test_chs.tiff" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c_py_tesseract/test_chs.tiff">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
-              <caret line="130" column="14" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ramdisk.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ramdisk.py">
+      <file leaf-file-name="capi4.0.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c_py_tesseract/capi4.0.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="244">
+              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multiarray.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/numpy/core/multiarray.py">
+      <file leaf-file-name="capi3.0.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c_py_tesseract/capi3.0.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+            <state relative-caret-position="127">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -101,9 +116,13 @@
     <findStrings>
       <find>rect_set</find>
       <find>kw</find>
+      <find>cls</find>
+      <find>TessBaseAPIInit3</find>
+      <find>'</find>
     </findStrings>
     <replaceStrings>
       <replace>self.rect_set</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -121,6 +140,10 @@
         <option value="$PROJECT_DIR$/text_processor.py" />
         <option value="$PROJECT_DIR$/cpytesseract.py" />
         <option value="$PROJECT_DIR$/c_py_tesseract/cpytesseract.py" />
+        <option value="$PROJECT_DIR$/c_py_tesseract/capi4.0.h" />
+        <option value="$PROJECT_DIR$/c_py_tesseract/capi3.0.h" />
+        <option value="$PROJECT_DIR$/c_py_tesseract/cpt_4.py" />
+        <option value="$PROJECT_DIR$/c_py_tesseract/cpt.py" />
       </list>
     </option>
   </component>
@@ -166,6 +189,19 @@
             <path>
               <item name="ScreenScanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScreenScanner" type="462c0819:PsiDirectoryNode" />
+              <item name="optical_character_recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScreenScanner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScreenScanner" type="462c0819:PsiDirectoryNode" />
+              <item name="optical_character_recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="tessdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScreenScanner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScreenScanner" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -179,17 +215,17 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/c_py_tesseract" />
-      <recent name="$PROJECT_DIR$/test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/c_py_tesseract" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/optical_character_recognition" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/c_py_tesseract" />
+      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cpytesseract">
+  <component name="RunManager" selected="Python.cpt">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="ScreenScanner" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,6 +260,44 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="cpt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ScreenScanner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/c_py_tesseract" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/c_py_tesseract/cpt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="cpt_4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ScreenScanner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/c_py_tesseract" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/c_py_tesseract/cpt_4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="cpytesseract" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ScreenScanner" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -238,25 +312,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/c_py_tesseract/cpytesseract.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ramdisk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ScreenScanner" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/ramdisk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,35 +355,21 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Twisted Trial in test_tesseract.py" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
-      <module name="ScreenScanner" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/optical_character_recognition" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/optical_character_recognition/test_tesseract.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python tests.Twisted Trial in test_tesseract.py" />
       <item itemvalue="Python.text_cleaner" />
-      <item itemvalue="Python.ramdisk" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.cpytesseract" />
+      <item itemvalue="Python.cpt" />
+      <item itemvalue="Python.cpt_4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cpt" />
+        <item itemvalue="Python.cpt_4" />
         <item itemvalue="Python.cpytesseract" />
         <item itemvalue="Python.text_cleaner" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python tests.Twisted Trial in test_tesseract.py" />
-        <item itemvalue="Python.ramdisk" />
       </list>
     </recent_temporary>
   </component>
@@ -377,16 +418,16 @@
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="5" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.30401236" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.29320988" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="right" id="Remote Host" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16919576" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16919576" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" auto_hide="true" x="351" y="29" width="434" height="648" id="SciView" order="1" show_stripe_button="false" type="FLOATING" weight="0.32928678" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="9" visible="true" weight="0.36882716" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.36882716" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -457,93 +498,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/c_py_tesseract/cpytesseract.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="43" />
+          <line>51</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/c_py_tesseract/cpt.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/c_py_tesseract/cpt_4.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="54" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/text_processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/fs/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8190">
-          <caret line="574" selection-start-line="574" selection-end-line="574" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/fs/memoryfs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5655">
-          <caret line="398" selection-start-line="398" selection-end-line="398" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pytesseract/pytesseract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="130" column="14" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ramdisk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/numpy/core/multiarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c_py_tesseract/cpytesseract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pytesseract/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text_cleaner/background_remove.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/random/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-844" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/numpy/random/mtrand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="2171" column="71" selection-start-line="2171" selection-start-column="71" selection-end-line="2171" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/imutils/convenience.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/skeleton.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -738,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="169" column="4" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -811,12 +776,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ctypes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="2566" column="8" selection-start-line="2566" selection-start-column="8" selection-end-line="2566" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_py_tesseract/capi3.0.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/intel/intelpython3/lib/python3.6/site-packages/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/intel/intelpython3/lib/python3.6/site-packages/cffi/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="301" selection-start-line="301" selection-end-line="301" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optical_character_recognition/test_eng.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_py_tesseract/test_chs.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/c_py_tesseract/cpytesseract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        <state relative-caret-position="257">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_py_tesseract/capi4.0.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/intel/intelpython3/lib/python3.6/ctypes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="362" selection-start-line="362" selection-end-line="362" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_py_tesseract/cpt_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_py_tesseract/test_eng.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_py_tesseract/cpt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
