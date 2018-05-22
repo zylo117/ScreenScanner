@@ -113,13 +113,21 @@ class TextImg:
         """
         h, w = self.gray_img.shape[:2]
 
+        if len(self.gray_img.shape) == 3:
+            c = self.gray_img.shape[2]
+            bright_size = (1, bright_noise, c)
+            dark_size = (1, dark_noise, c)
+        else:
+            bright_size = (1, bright_noise)
+            dark_size = (1, dark_noise)
+
         bright_noise_x = np.random.randint(0, w, size=(1, bright_noise))
         bright = np.random.randint(0, h, size=(1, bright_noise))
-        self.gray_img[bright, bright_noise_x] = np.random.randint(192, 256, size=bright_noise)
+        self.gray_img[bright, bright_noise_x] = np.random.randint(192, 256, size=bright_size)
 
         dark_noise_x = np.random.randint(0, w, size=(1, dark_noise))
         dark_noise_y = np.random.randint(0, h, size=(1, dark_noise))
-        self.gray_img[dark_noise_y, dark_noise_x] = np.random.randint(0, 64, size=dark_noise)
+        self.gray_img[dark_noise_y, dark_noise_x] = np.random.randint(0, 64, size=dark_size)
 
         return self.gray_img
 
